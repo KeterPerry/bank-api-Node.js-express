@@ -1,7 +1,6 @@
-// const route = require('./routes/weather.route');
+// const route = require('./routes.js');
 import express from "express";
 import users from "./users.js";
-// import users from "users.js";
 
 const app = express();
 app.use(express.json());
@@ -32,7 +31,7 @@ app.listen(PORT, (req, res) => {
 //   }
 // });
 /////////////////////////////////////////////////////
-// app.post("/users/", (req, res) => {
+// app.post("/adduser/", (req, res) => {
 //   ///to add more data to the new obj
 //   try {
 //     const { id, name, passportID } = req.body;
@@ -45,7 +44,7 @@ app.listen(PORT, (req, res) => {
 // });
 
 ////////////////////////////////////////////////////////////////////
-// app.put("/accounts/:id", function (req, res) {
+// app.put("/deposit/:id", function (req, res) {
 //   const { id } = req.params;
 //   console.log(typeof id);
 //   const { cash } = req.body;
@@ -54,7 +53,7 @@ app.listen(PORT, (req, res) => {
 //   res.send(users.getAllAccounts());
 // });
 
-// app.put("/accounts/", function (req, res) {    ///checked
+// app.put("/deposit/", function (req, res) {    ///checked
 //   const { accountID, cash, passportID } = req.body;
 //   console.log(accountID, cash, passportID);
 //   users.updateCash(accountID, cash, passportID);
@@ -63,7 +62,7 @@ app.listen(PORT, (req, res) => {
 // });
 ///////////////////////////////////////////////
 
-// app.put("/accounts/", function (req, res) {///checked
+// app.put("/credit/", function (req, res) {///checked
 //   const { accountID, credit, passportID } = req.body;
 //   console.log(accountID, credit, passportID);
 //   if (credit > 0) {
@@ -76,19 +75,20 @@ app.listen(PORT, (req, res) => {
 // });
 ///////////////////////////////////////////////////////////////////////////
 
-// app.put("/accounts/", function (req, res) {  ///checked
+// app.put("/withdraw/", function (req, res) {  ///checked
 //   try {
 //     const { accountID, withdraw, passportID } = req.body;
 //     console.log(accountID, withdraw, passportID);
-//     users.updateFromWithdraw(accountID, withdraw, passportID);
+//     res.send(users.updateFromWithdraw(accountID, withdraw, passportID)); make sure the func returns json
 //     res.send(users.getAllAccounts());
 //     res.send(users.getAllUsers());
 //   } catch (error) {
 //     console.log(error);
 //   }
 // });
+/////////////////////////////////////////////////////////////////////////////
 
-app.put("/accounts/", function (req, res) {
+app.put("/transfer/", function (req, res) {
   ///checked
   try {
     const { accountID, transfer, passportID1, passportID2 } = req.body;

@@ -220,6 +220,7 @@ const updateTransaction = (accountID, transfer, passportID1, passportID2) => {
 
       //   users[userIndex] = updatedUser;
       saveAccount(accounts);
+      return [updatedAccout2, updatedAccout1];
       //   save(users);
     } else {
       throw new Error("You have reached your limit");

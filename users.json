@@ -1,1 +1,24 @@
-[{"id":"1","name":"Bar","passportID":"1234","accounts":[{"accountID":"1","cash":-110,"credit":100,"isActive":"true"},{"accountID":"2","cash":0,"credit":0,"isActive":"true"}]},{"id":"2","name":"Barbara","passportID":"12345","accounts":[{"accountID":"1","cash":0,"credit":0,"isActive":"true"},{"accountID":"2","cash":0,"credit":0,"isActive":"true"}]},{"id":"1016wzuegl4i431ny","name":"Ron"},{"id":"1016wzw10l4i4cfhd","name":"Ron","passportID":"123456"},{"id":"1016wz164wl4i4iz1b","name":"Ron","passportID":"1234567"},{"id":"1016wz16bcl4i4q6j5","name":"benny","passportID":"12345678"}]
+[
+  {
+    "id": "1",
+    "name": "Bar",
+    "passportID": "1234",
+    "accounts": [
+      { "accountID": "1", "cash": -110, "credit": 100, "isActive": "true" },
+      { "accountID": "2", "cash": 0, "credit": 0, "isActive": "true" }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Barbara",
+    "passportID": "12345",
+    "accounts": [
+      { "accountID": "1", "cash": 0, "credit": 0, "isActive": "true" },
+      { "accountID": "2", "cash": 0, "credit": 0, "isActive": "true" }
+    ]
+  },
+  { "id": "1016wzuegl4i431ny", "name": "Ron" },
+  { "id": "1016wzw10l4i4cfhd", "name": "Ron", "passportID": "123456" },
+  { "id": "1016wz164wl4i4iz1b", "name": "Ron", "passportID": "1234567" },
+  { "id": "1016wz16bcl4i4q6j5", "name": "benny", "passportID": "12345678" }
+]
